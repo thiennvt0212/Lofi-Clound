@@ -1,0 +1,110 @@
+.pomodoro-modal {
+  width: 600px;
+  height: 300px;
+  background-color: #0000007c;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  z-index: 9999;
+  animation: slideFadeIn 0.3s ease;
+    font-family: "Stardom", sans-serif;
+}
+
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.pomodoro-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h2 {
+    font-family: "Stardom", sans-serif;
+    font-size: 22px;
+    margin: 49px 0px 0px 56px;
+    color: white;
+  }
+
+  .close-button {
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  right: 0;
+  padding: 6px 8px 6px 8px;
+  margin-top: 14px;
+  margin-right: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+}
+
+.timer-display {
+  font-size: 52px;
+  font-weight: 600;
+  margin: 20px 0;
+  color: white;
+}
+
+.timer-controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+
+  .btn {
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-family: "Stardom", sans-serif;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    &.start {
+      background: #4caf50;
+      color: white;
+    }
+
+    &.pause {
+      background: #ff9800;
+      color: white;
+    }
+
+    &.reset {
+      background: #f44336;
+      color: white;
+    }
+  }
+}
+
+.mode-select {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+
+  button {
+    font-family: "Stardom", sans-serif;
+    background: transparent;
+    border: 1px solid white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+
+    &.active {
+      background: white;
+      color: black;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  height: 40px;
+  background-color: #000;
+  border: none;
+  
+}
+
+.icon {
+  font-style: 38px !important;
+  font-weight: 300;
+  line-height: 1;
+  color: white;
+  font-size: 18px;
+}
+
+
+.text {
+  position: absolute;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.3);
+  opacity: 0;
+  right: 62px;
+  transform: translateY(10px) rotate(90deg);
+  padding: 5px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  // overflow: hidden;
+  font-family: "Stardom", sans-serif;
+  font-weight: 300;
+  background-color: #374151;
+}
+
+.textVisible {
+  opacity: 1;
+  transform: translateX(0px) rotate(0deg);
+  max-height: 40px;
+}
